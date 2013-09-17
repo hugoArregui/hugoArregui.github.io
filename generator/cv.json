@@ -1,0 +1,293 @@
+{
+    "higher-education": [
+        {
+            "finished": false,
+            "institution": "CAECE University",
+            "startDate": "2010",
+            "title": "System Degree"
+        },
+        {
+            "comments": "(Unfinished)",
+            "endDate": "2010",
+            "finished": true,
+            "institution": "Universidad Tecnologica Nacional",
+            "startDate": "2005",
+            "title": "System Engineering"
+        }
+    ],
+    "other-education": [
+        {
+            "date": "2013",
+            "title": "Image and video processing: From Mars to Hollywood with a stop at the hospital",
+            "where": "Coursera"
+        },
+        {
+            "date": "2012",
+            "title": "Algorithms: Design and Analysis Part I",
+            "where": "Coursera: Standford Online"
+        },
+        {
+            "date": "2011",
+            "title": "Programaci\u00f3n de Seguridad mediante Bibliotecas",
+            "where": "UBA - ECI 2011"
+        },
+        {
+            "date": "2011",
+            "title": "Programaci\u00f3n distribuida y paralela usando MPI",
+            "where": "UBA - ECI 2011"
+        },
+        {
+            "date": "2010",
+            "title": "C++ Internals",
+            "where": "FuDePAN"
+        },
+        {
+            "date": "2010",
+            "title": "C/C++ Good Practices",
+            "where": "FuDePAN"
+        }
+    ],
+    "positions": [
+        {
+            "company": {
+                "industry": "Computer Software",
+                "name": "Bevuta IT GmbH"
+            },
+            "isCurrent": true,
+            "startDate": "2/2013",
+            "title": "Scheme Developer"
+        },
+        {
+            "company": {
+                "industry": "Biotechnology",
+                "name": "FuDePAN",
+                "size": "11-50 employees",
+                "type": "Nonprofit"
+            },
+            "isCurrent": true,
+            "startDate": "8/2010",
+            "title": "C++ Developer (Ad honorem)",
+            "summary": "Bioinformatics oriented tools development.",
+            "keywords": ["C++", "Template Metaprogramming", 
+              "googletest", "googlemock", "g++", "make", "Scons", "Jenkins", "SVN", "Mercurial"]
+        },
+        {
+            "company": {
+                "industry": "Computer Software",
+                "name": "LambdaDev"
+            },
+            "isCurrent": true,
+            "startDate": "7/2010",
+            "summary": "Freelance Software Engineer/Developer.",
+            "keywords": ["C++", "Python", "Java", "SOAP", "suds", "Scrapy", "Webpy", "Pylons", 
+              "Google Apps Engine", "Spring", "Hibernate", "JPA2", "Maven", "Javascript", "Dojo", 
+              "jQuery", "MySQL", "PostgreSQL", "bash", "bash scripting", "SVN", "Mercurial", "Git"],
+            "title": "Co-Founder / Developer"
+        },
+        {
+            "company": {
+                "industry": "Biotechnology",
+                "name": "FuDePAN",
+                "size": "11-50 employees",
+                "type": "Nonprofit"
+            },
+            "endDate": "01/2013",
+            "isCurrent": false,
+            "startDate": "07/2011",
+            "title": "Regional Coordinator for Buenos Aires (Ad honorem)",
+            "summary": "Projects and volunteers coordination."
+        },
+        {
+            "company": {
+                "industry": "Research",
+                "name": "CITEDEF",
+                "size": "501-1000 employees",
+                "type": "Public Company"
+            },
+            "endDate": "08/2011",
+            "isCurrent": false,
+            "startDate": "04/2011",
+            "summary": "Sistema CRISIS.",
+            "title": "Becario / Groovy-Grails Developer"
+        },
+        {
+            "company": {
+                "industry": "Computer Software",
+                "name": "TeraCode",
+                "size": "51-200 employees",
+                "type": "Privately Held"
+            },
+            "endDate": "01/2011",
+            "isCurrent": false,
+            "startDate": "04/2010",
+            "summary": "Working in performable's web-site/platform",
+            "keywords": ["python", "Tornado", "django", "SQLAlchemy", "jQuery", "MySQL", "Scrum"],
+            "title": "Ssr. Python Developer"
+        },
+        {
+            "company": {
+                "industry": "Market Research",
+                "name": "Livra",
+                "size": "51-200 employees",
+                "type": "Privately Held"
+            },
+            "endDate": "04/2010",
+            "isCurrent": false,
+            "startDate": "04/2008",
+            "summary": " Working on Livra’s portal and online marketing tools (surveys, statistics, etc).",
+            "keywords": ["Apache Wicket", "Hibernate", "JUnit", "Velocity", "Lucene", "PostgreSQL", 
+              "Web Services", "Rest", "Jersey", "SOAP", "Axis", "prototype", "scriptaculous", 
+              "Eclipse", "Tomcat", "Jetty", "ant", "Maven", "SVN"],
+            "title": "Ssr. Java Developer"
+        },
+        {
+            "company": {
+                "industry": "Information Technology and Services",
+                "name": "Thales Information Systems",
+                "size": "10,001+ employees",
+                "type": "Privately Held"
+            },
+            "endDate": "04/2008",
+            "isCurrent": false,
+            "startDate": "08/2007",
+            "summary": "Developer in Thales Software Factory. IVR using avaya tools and Asterix. Web-based tools using structs, hibernate and spring.",
+            "title": "Java Developer"
+        },
+        {
+            "company": {
+                "industry": "Computer Software",
+                "name": "Star Technology"
+            },
+            "endDate": "12/2006",
+            "isCurrent": false,
+            "startDate": "06/2006",
+            "keywords": ["SQL", "PL/SQL", "Oracle Financials", "Reports Builder", "Forms Builder"],
+            "title": "Developer"
+        }
+    ],
+    "publications": [
+        {
+            "authors": "Hugo Arregui, Carlos Castro, Daniel Gutson",
+            "date": "2012",
+            "title": "Curiously Recursive Template Problems with Aspect Oriented Programming",
+            "where": "ACCU Overload magazine #109, June 2012."
+        },
+        {
+            "authors": "Hugo Arregui, Daniel Gutson",
+            "date": "2011",
+            "title": "Biopp2: biological alphabet manipulation library",
+            "where": "2do Congreso Argentino de Biologia Computacional"
+        },
+        {
+            "authors": "Hugo Arregui, Rodrigo Casta\u00f1o, Luc\u00eda Laur\u00eda, Rafael Garabato, Elmer Fern\u00e1ndez, Marcos Villarreal",
+            "date": "2011",
+            "title": "Backbones Generator v2",
+            "where": "2do Congreso Argentino de Biologia Computacional"
+        }
+    ],
+    "skills": [
+        {
+            "keys": [
+                "C++",
+                "Python",
+                "Java",
+                "Groovy",
+                "Bash Scripting/AWK",
+                "Scheme",
+                "JavaScript"
+            ],
+            "name": "Programming Languages"
+        },
+        {
+            "keys": [
+                "googletest",
+                "googlemock"
+            ],
+            "name": "C++ frameworks"
+        },
+        {
+            "keys": [
+                "django",
+                "pylons",
+                "tornado",
+                "webpy. unittest",
+                "pymock"
+            ],
+            "name": "Python frameworks"
+        },
+        {
+            "keys": [
+                "Hibernate",
+                "Spring",
+                "Struts",
+                "Wicket",
+                "Junit"
+            ],
+            "name": "Java frameworks"
+        },
+        {
+            "keys": [
+                "jQuery",
+                "Dojo",
+                "Prototype"
+            ],
+            "name": "Javascript Frameworks"
+        },
+        {
+            "keys": [
+                "valgrind",
+                "gdb",
+                "Vim",
+                "Eclipse",
+                "ipython"
+            ],
+            "name": "Tools"
+        },
+        {
+            "keys": [
+                "hg",
+                "git",
+                "svn"
+            ],
+            "name": "Version Control"
+        },
+        {
+            "keys": [
+                "make",
+                "scons",
+                "ant"
+            ],
+            "name": "Build Systems"
+        },
+        {
+            "keys": [
+                "PostgreSQL",
+                "MySQL",
+                "SQL Server",
+                "Oracle"
+            ],
+            "name": "Databases"
+        },
+        {
+            "keys": [
+                "Jenkins/Hudson"
+            ],
+            "name": "Continuous integration"
+        },
+        {
+            "keys": [
+                "Youtrack",
+                "Google Code",
+                "Redmine"
+            ],
+            "name": "Tracking systems"
+        },
+        {
+            "keys": [
+                "Unix/Linux",
+                "Windows"
+            ],
+            "name": "Operating Systems"
+        }
+    ]
+}

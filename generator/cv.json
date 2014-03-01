@@ -64,8 +64,9 @@
                 "size": "11-50 employees",
                 "type": "Nonprofit"
             },
-            "isCurrent": true,
+            "isCurrent": false,
             "startDate": "8/2010",
+            "endDate": "01/2014",
             "title": "C++ Developer (Ad honorem)",
             "summary": "Bioinformatics oriented tools development.",
             "keywords": ["C++", "Template Metaprogramming", 

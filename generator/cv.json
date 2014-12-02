@@ -1,10 +1,10 @@
 {
     "higher-education": [
         {
-            "finished": false,
+            "finished": true,
             "institution": "CAECE University",
             "startDate": "2010",
-            "title": "System Degree"
+            "title": "System Analyst"
         },
         {
             "comments": "(Unfinished)",

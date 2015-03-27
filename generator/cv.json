@@ -52,10 +52,19 @@
         {
             "company": {
                 "industry": "Computer Software",
-                "name": "bevuta IT GmbH"
+                "name": "Jampp"
             },
             "isCurrent": true,
+            "startDate": "2/2015",
+            "title": "Developer"
+        },
+        {
+            "company": {
+                "industry": "Computer Software",
+                "name": "bevuta IT GmbH"
+            },
             "startDate": "2/2013",
+            "endDate": "02/2015",
             "title": "Scheme Developer"
         },
         {

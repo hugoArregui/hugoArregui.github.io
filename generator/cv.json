@@ -146,6 +146,7 @@
     ],
     "skills": [
         {
+            "name": "Languages",
             "keys": [
                 "C++",
                 "Python",
@@ -154,10 +155,10 @@
                 "Bash Scripting/AWK",
                 "JavaScript",
                 "Groovy"
-            ],
-            "name": "Programming Languages"
+            ]
         },
         {
+            "name": "Python tools",
             "keys": [
                 "django",
                 "pylons",
@@ -167,35 +168,35 @@
                 "pymock",
                 "flake8",
                 "flask"
-            ],
-            "name": "Python tools"
+            ]
         },
         {
+            "name": "C++ tools",
             "keys": [
                 "googletest",
                 "googlemock"
-            ],
-            "name": "C++ tools"
+            ]
         },
         {
+            "name": "Java tools",
             "keys": [
                 "Hibernate",
                 "Spring",
                 "Struts",
                 "Wicket",
                 "Junit"
-            ],
-            "name": "Java tools"
+            ]
         },
         {
+            "name": "Javascript tools",
             "keys": [
                 "jQuery",
                 "Dojo",
                 "Prototype"
-            ],
-            "name": "Javascript tools"
+            ]
         },
         {
+            "name": "Others tools",
             "keys": [
                 "valgrind",
                 "gdb",
@@ -210,46 +211,45 @@
                 "Asana",
                 "Bootstrap",
                 "Android"
-            ],
-            "name": "Others"
+            ]
         },
         {
+            "name": "Version Control",
             "keys": [
                 "hg",
                 "git",
                 "svn"
-            ],
-            "name": "Version Control"
+            ]
         },
         {
+            "name": "Build Systems",
             "keys": [
                 "make",
                 "scons",
                 "ant"
-            ],
-            "name": "Build Systems"
+            ]
         },
         {
+            "name": "Databases",
             "keys": [
                 "PostgreSQL",
                 "MySQL",
                 "SQL Server",
                 "Oracle"
-            ],
-            "name": "Databases"
+            ]
         },
         {
+            "name": "Continuous integration",
             "keys": [
                 "Jenkins/Hudson"
-            ],
-            "name": "Continuous integration"
+            ]
         },
         {
+            "name": "Operating Systems",
             "keys": [
                 "Unix/Linux",
                 "Windows"
-            ],
-            "name": "Operating Systems"
+            ]
         }
     ]
 }

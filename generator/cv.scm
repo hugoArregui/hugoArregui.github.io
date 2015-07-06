@@ -21,122 +21,98 @@
       (cdr r)
       #f)))
 
+(define (two-cols-block data title f #!key (left-col-size 3))
+  (list 
+    (<h3> title)
+    (<div>
+      (reverse 
+        (vector-fold 
+          (lambda (i tail data)
+            (let-values (((col1 col2) (f i data)))
+              (cons (<div> class: "row"
+                           (<div> class: (string-append "col-" (number->string left-col-size) " text-right")
+                                  col1)
+                           (<div> class: (string-append "col-" (number->string (- 12 left-col-size)))
+                                  col2))
+                    tail)))
+          '()
+          data)))))
+
 (define (positions-block)
-  (let ((positions (cdr (assq 'positions cv-data))))
-    (list 
-      (<h3> "Professional Experience")
-      (<div>
-        (reverse 
-          (vector-fold 
-            (lambda (i tail position)
-              (let* ((company          (json-ref 'company   position))
-                     (end-date         (json-ref 'endDate   position))
-                     (start-date       (json-ref 'startDate position))
-                     (summary          (json-ref 'summary   position))
-                     (keywords         (json-ref 'keywords  position))
-                     (title            (json-ref 'title     position)))
-                (cons (<div> class: "row"
-                             (<div> class: "col-3 text-right"
-                                    (<b> start-date " - "
-                                         (if end-date
-                                           end-date
-                                           (<span> class: "label label-success" "[PRESENT]"))
-                                         ""))
-                             (<div> class: "col-8"
-                                    (<b> title) " at " (<span> class: "company" company)
-                                    (<p>)
-                                    (<p> (if summary summary ""))
-                                    (if keywords
-                                      (<p> "Keywords: " (string-join (vector->list keywords) ", "))
-                                      "")))
-                      tail)))
-            '()
-            positions))))))
+  (two-cols-block (cdr (assq 'positions cv-data))
+                  "Professional Experience"
+                  (lambda (i position)
+                    (let* ((company          (json-ref 'company   position))
+                           (end-date         (json-ref 'endDate   position))
+                           (start-date       (json-ref 'startDate position))
+                           (summary          (json-ref 'summary   position))
+                           (keywords         (json-ref 'keywords  position))
+                           (title            (json-ref 'title     position)))
+                      (values
+                        (<b> start-date " - "
+                             (if end-date
+                               end-date
+                               (<span> class: "label label-success" "[PRESENT]"))
+                             "")
+                        (list
+                          (<b> title) " at " (<span> class: "company" company)
+                          (<p>)
+                          (<p> (if summary summary ""))
+                          (if keywords
+                            (<p> "Keywords: " (string-join (vector->list keywords) ", "))
+                            "")))))
+                  left-col-size: 3))
 
 (define (publications-block)
-  (let ((publications (cdr (assq 'publications cv-data))))
-    (list 
-      (<h3> "Publications")
-      (<div>
-        (reverse 
-          (vector-fold 
-            (lambda (i tail publication)
-              (let* ((authors (json-ref 'authors publication))
-                     (date    (json-ref 'date    publication))
-                     (title   (json-ref 'title   publication))
-                     (where   (json-ref 'where   publication)))
-                (cons (list 
-                        (<p> date " - " (<b> title ". "))
-                        (<ul> style: "list-style-type: none"
-                            (<li> where ". ")
-                            (<li> (<i> authors))))
-                      tail)))
-            '()
-            publications))))))
+  (two-cols-block (cdr (assq 'publications cv-data))
+                  "Publications"
+                  (lambda (i publication)
+                    (let* ((authors (json-ref 'authors publication))
+                           (date    (json-ref 'date    publication))
+                           (title   (json-ref 'title   publication))
+                           (where   (json-ref 'where   publication)))
+                      (values
+                        (<b> date) 
+                        (<p> style: "list-style-type: none"
+                              (<span> (<b> title))
+                              (<br>)
+                              (<span> where)
+                              (<br>)
+                              (<span> (<i> authors))))))
+                  left-col-size: 3))
 
 (define (heducation-block)
-  (let ((education-data (cdr (assq 'higher-education cv-data))))
-    (list 
-      (<h3> "Higher Education")
-      (<div>
-        (reverse 
-          (vector-fold 
-            (lambda (i tail education)
-              (let* ((institution (json-ref 'institution education))
-                     (start-date  (json-ref 'startDate   education))
-                     (end-date    (json-ref 'endDate     education))
-                     (title       (json-ref 'title       education))
-                     (comments    (json-ref 'comments    education)))
-                (cons (<div> class: "row"
-                             (<div> class: "col-4 text-right"
-                                    (<b> start-date " - " (if end-date
-                                                            end-date 
-                                                            (<span> class: "label label-success" "[PRESENT]"))))
-                             (<div> class: "col-8"
-                                    (<span> title " at " institution " " comments)))
-                      tail)))
-            '()
-            education-data))))))
+  (two-cols-block (cdr (assq 'higher-education cv-data))
+                  "Higher Education"
+                  (lambda (i education)
+                    (let* ((institution (json-ref 'institution education))
+                           (start-date  (json-ref 'startDate   education))
+                           (end-date    (json-ref 'endDate     education))
+                           (title       (json-ref 'title       education))
+                           (comments    (json-ref 'comments    education)))
+                      (values
+                        (<b> start-date " - " (if end-date
+                                                end-date 
+                                                (<span> class: "label label-success" "[PRESENT]")))
+                        (<span> title " at " institution " " comments))))))
 
 (define (other-education-block)
-  (let ((education-data (cdr (assq 'other-education cv-data))))
-    (list 
-      (<h3> "Other Education")
-      (<div>
-        (reverse 
-          (vector-fold 
-            (lambda (i tail education)
-              (let* ((where (json-ref 'where education))
-                     (title (json-ref 'title education))
-                     (date  (json-ref 'date education))
-                     (desc  (json-ref 'desc  education)))
-                (cons (<div> class: "row"
-                             (<div> class: "col-4 text-right"
-                                    (<b> date " - " where))
-                             (<div> class: "col-8"
-                                    (<span> title)))
-                      tail)))
-            '()
-            education-data))))))
+  (two-cols-block (cdr (assq 'other-education cv-data))
+                  "Other Education"
+                  (lambda (i education)
+                    (let* ((where (json-ref 'where education))
+                           (title (json-ref 'title education))
+                           (date  (json-ref 'date education))
+                           (desc  (json-ref 'desc  education)))
+                      (values (<b> date " - " where) (<span> title))))))
 
 (define (skills-block)
-  (let ((skills (cdr (assq 'skills cv-data))))
-    (list 
-      (<h3> "Computer Skills")
-      (<div>
-        (reverse 
-          (vector-fold 
-            (lambda (i tail skill)
-              (let* ((name (json-ref 'name skill))
-                     (keys (json-ref 'keys skill)))
-                (cons (<div> class: "row"
-                             (<div> class: "col-4 text-right"
-                                    (<b> name ":"))
-                             (<div> class: "col-8"
-                                    (string-join (vector->list keys) ", ")))
-                      tail)))
-            '()
-            skills))))))
+  (two-cols-block (cdr (assq 'skills cv-data))
+                  "Computer Skills"
+                  (lambda (i skill)
+                    (let* ((name (json-ref 'name skill))
+                           (keys (json-ref 'keys skill)))
+                      (values (<b> name ":") (string-join (vector->list keys) ", "))))))
 
 (define (cv->html)
   (sxml->html

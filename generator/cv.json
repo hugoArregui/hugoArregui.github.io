@@ -54,9 +54,9 @@
                 "industry": "Computer Software",
                 "name": "Jampp"
             },
-            "isCurrent": true,
-            "startDate": "2/2015",
-            "title": "Developer"
+            "startDate": "1/2015",
+            "endDate": "06/2015",
+            "title": "Sr. Python Developer"
         },
         {
             "company": {
@@ -89,11 +89,10 @@
             },
             "isCurrent": true,
             "startDate": "7/2010",
-            "summary": "Freelance Software Engineer/Developer.",
             "keywords": ["C++", "Python", "Java", "SOAP", "suds", "Scrapy", "Webpy", "Pylons", 
               "Google Apps Engine", "Spring", "Hibernate", "JPA2", "Maven", "Javascript", "Dojo", 
               "jQuery", "MySQL", "PostgreSQL", "bash", "bash scripting", "SVN", "Mercurial", "Git"],
-            "title": "Co-Founder / Developer"
+            "title": "Freelance Software Engineer/Developer"
         },
         {
             "company": {
@@ -202,29 +201,32 @@
                 "C++",
                 "Python",
                 "Java",
-                "Groovy",
-                "Bash Scripting/AWK",
                 "Scheme",
-                "JavaScript"
+                "Bash Scripting/AWK",
+                "JavaScript",
+                "Groovy"
             ],
             "name": "Programming Languages"
-        },
-        {
-            "keys": [
-                "googletest",
-                "googlemock"
-            ],
-            "name": "C++ frameworks"
         },
         {
             "keys": [
                 "django",
                 "pylons",
                 "tornado",
-                "webpy. unittest",
-                "pymock"
+                "webpy",
+                "unittest",
+                "pymock",
+                "flake8",
+                "flask"
             ],
-            "name": "Python frameworks"
+            "name": "Python tools"
+        },
+        {
+            "keys": [
+                "googletest",
+                "googlemock"
+            ],
+            "name": "C++ tools"
         },
         {
             "keys": [
@@ -234,7 +236,7 @@
                 "Wicket",
                 "Junit"
             ],
-            "name": "Java frameworks"
+            "name": "Java tools"
         },
         {
             "keys": [
@@ -242,7 +244,7 @@
                 "Dojo",
                 "Prototype"
             ],
-            "name": "Javascript Frameworks"
+            "name": "Javascript tools"
         },
         {
             "keys": [
@@ -250,9 +252,16 @@
                 "gdb",
                 "Vim",
                 "Eclipse",
-                "ipython"
+                "Youtrack",
+                "Google Code",
+                "Redmine",
+                "Bitbucket",
+                "Gitlab",
+                "GitHub",
+                "Asana",
+                "Bootstrap"
             ],
-            "name": "Tools"
+            "name": "Others"
         },
         {
             "keys": [
@@ -284,14 +293,6 @@
                 "Jenkins/Hudson"
             ],
             "name": "Continuous integration"
-        },
-        {
-            "keys": [
-                "Youtrack",
-                "Google Code",
-                "Redmine"
-            ],
-            "name": "Tracking systems"
         },
         {
             "keys": [

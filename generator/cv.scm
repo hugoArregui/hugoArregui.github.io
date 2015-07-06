@@ -53,30 +53,6 @@
                 '()
                 positions))))))
 
-(define (heducation-block)
-  (let ((education-data (cdr (assq 'higher-education cv-data))))
-    (list 
-      (<h3> "Higher Education")
-      (<dl> class: "dl-horizontal"
-            (reverse 
-              (vector-fold 
-                (lambda (i tail education)
-                  (let* ((institution (json-ref 'institution education))
-                         (start-date  (json-ref 'startDate   education))
-                         (end-date    (json-ref 'endDate     education))
-                         (title       (json-ref 'title       education))
-                         (comments    (json-ref 'comments    education)))
-                    (cons (list 
-                            (<dt>
-                              start-date " - "
-                              (if end-date
-                                 end-date 
-                                 (<span> class: "label label-success" "[PRESENT]")))
-                            (<dd> title " at " institution " " comments))
-                          tail)))
-                '()
-                education-data))))))
-
 (define (publications-block)
   (let ((publications (cdr (assq 'publications cv-data))))
     (list 
@@ -98,6 +74,30 @@
             '()
             publications))))))
 
+(define (heducation-block)
+  (let ((education-data (cdr (assq 'higher-education cv-data))))
+    (list 
+      (<h3> "Higher Education")
+      (<div>
+        (reverse 
+          (vector-fold 
+            (lambda (i tail education)
+              (let* ((institution (json-ref 'institution education))
+                     (start-date  (json-ref 'startDate   education))
+                     (end-date    (json-ref 'endDate     education))
+                     (title       (json-ref 'title       education))
+                     (comments    (json-ref 'comments    education)))
+                (cons (<div> class: "row"
+                             (<div> class: "col-4"
+                                    (<b> start-date " - " (if end-date
+                                                            end-date 
+                                                            (<span> class: "label label-success" "[PRESENT]"))))
+                             (<div> class: "col-8"
+                                    (<span> title " at " institution " " comments)))
+                      tail)))
+            '()
+            education-data))))))
+
 (define (other-education-block)
   (let ((education-data (cdr (assq 'other-education cv-data))))
     (list 
@@ -113,9 +113,8 @@
                 (cons (<div> class: "row"
                              (<div> class: "col-4"
                                     (<b> date " " where))
-                             (<div> class: "col-5"
-                                    (<p> title)
-                                    (<p> desc)))
+                             (<div> class: "col-8"
+                                    (<span> title)))
                       tail)))
             '()
             education-data))))))
@@ -133,7 +132,7 @@
                 (cons (<div> class: "row"
                              (<div> class: "col-4"
                                     (<b> name ":"))
-                             (<div> class: "col-5"
+                             (<div> class: "col-8"
                                     (string-join (vector->list keys) ", ")))
                       tail)))
             '()

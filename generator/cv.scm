@@ -25,33 +25,33 @@
   (let ((positions (cdr (assq 'positions cv-data))))
     (list 
       (<h3> "Professional Experience")
-      (<dl> class: "dl-horizontal"
-            (reverse 
-              (vector-fold 
-                (lambda (i tail position)
-                  (let* ((company          (json-ref 'company   position))
-                         (end-date         (json-ref 'endDate   position))
-                         (start-date       (json-ref 'startDate position))
-                         (summary          (json-ref 'summary   position))
-                         (keywords         (json-ref 'keywords  position))
-                         (title            (json-ref 'title     position)))
-                    (cons (list 
-                            (<dt>
-                              start-date " - "
-                              (if end-date
-                                end-date
-                                (<span> class: "label label-success" "[PRESENT]"))
-                              ": ")
-                            (<dd>
-                              (<b> title) " at " (<span> class: "company" company)
-                              (<p>)
-                              (<p> (if summary summary ""))
-                              (if keywords
-                                (<p> "Keywords: " (string-join (vector->list keywords) ", "))
-                                "")))
-                          tail)))
-                '()
-                positions))))))
+      (<div>
+        (reverse 
+          (vector-fold 
+            (lambda (i tail position)
+              (let* ((company          (json-ref 'company   position))
+                     (end-date         (json-ref 'endDate   position))
+                     (start-date       (json-ref 'startDate position))
+                     (summary          (json-ref 'summary   position))
+                     (keywords         (json-ref 'keywords  position))
+                     (title            (json-ref 'title     position)))
+                (cons (<div> class: "row"
+                             (<div> class: "col-3 col-offset-1 text-right"
+                                    (<b> start-date " - "
+                                         (if end-date
+                                           end-date
+                                           (<span> class: "label label-success" "[PRESENT]"))
+                                         ": "))
+                             (<div> class: "col-8"
+                                    (<b> title) " at " (<span> class: "company" company)
+                                    (<p>)
+                                    (<p> (if summary summary ""))
+                                    (if keywords
+                                      (<p> "Keywords: " (string-join (vector->list keywords) ", "))
+                                      "")))
+                      tail)))
+            '()
+            positions))))))
 
 (define (publications-block)
   (let ((publications (cdr (assq 'publications cv-data))))
@@ -88,7 +88,7 @@
                      (title       (json-ref 'title       education))
                      (comments    (json-ref 'comments    education)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-4"
+                             (<div> class: "col-3 col-offset-1 text-right"
                                     (<b> start-date " - " (if end-date
                                                             end-date 
                                                             (<span> class: "label label-success" "[PRESENT]"))))
@@ -111,8 +111,8 @@
                      (date  (json-ref 'date education))
                      (desc  (json-ref 'desc  education)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-4"
-                                    (<b> date " " where))
+                             (<div> class: "col-3 col-offset-1 text-right"
+                                    (<b> date " - " where))
                              (<div> class: "col-8"
                                     (<span> title)))
                       tail)))
@@ -130,7 +130,7 @@
               (let* ((name (json-ref 'name skill))
                      (keys (json-ref 'keys skill)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-4"
+                             (<div> class: "col-4 text-right"
                                     (<b> name ":"))
                              (<div> class: "col-8"
                                     (string-join (vector->list keys) ", ")))

@@ -36,12 +36,12 @@
                      (keywords         (json-ref 'keywords  position))
                      (title            (json-ref 'title     position)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-3 col-offset-1 text-right"
+                             (<div> class: "col-3 text-right"
                                     (<b> start-date " - "
                                          (if end-date
                                            end-date
                                            (<span> class: "label label-success" "[PRESENT]"))
-                                         ": "))
+                                         ""))
                              (<div> class: "col-8"
                                     (<b> title) " at " (<span> class: "company" company)
                                     (<p>)
@@ -88,7 +88,7 @@
                      (title       (json-ref 'title       education))
                      (comments    (json-ref 'comments    education)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-3 col-offset-1 text-right"
+                             (<div> class: "col-3 text-right"
                                     (<b> start-date " - " (if end-date
                                                             end-date 
                                                             (<span> class: "label label-success" "[PRESENT]"))))
@@ -111,7 +111,7 @@
                      (date  (json-ref 'date education))
                      (desc  (json-ref 'desc  education)))
                 (cons (<div> class: "row"
-                             (<div> class: "col-3 col-offset-1 text-right"
+                             (<div> class: "col-3 text-right"
                                     (<b> date " - " where))
                              (<div> class: "col-8"
                                     (<span> title)))

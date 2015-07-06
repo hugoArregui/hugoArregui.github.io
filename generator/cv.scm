@@ -30,10 +30,7 @@
               (vector-fold 
                 (lambda (i tail position)
                   (let* ((company          (json-ref 'company   position))
-                         (company-name     (json-ref 'name      company))
-                         (company-industry (json-ref 'industry  company))
                          (end-date         (json-ref 'endDate   position))
-                         (is-current       (json-ref 'isCurrent position))
                          (start-date       (json-ref 'startDate position))
                          (summary          (json-ref 'summary   position))
                          (keywords         (json-ref 'keywords  position))
@@ -41,12 +38,12 @@
                     (cons (list 
                             (<dt>
                               start-date " - "
-                              (if is-current 
-                                (<span> class: "label label-success" "[PRESENT]") 
-                                end-date) 
+                              (if end-date
+                                end-date
+                                (<span> class: "label label-success" "[PRESENT]"))
                               ": ")
                             (<dd>
-                              (<b> title) " at " company-name
+                              (<b> title) " at " company
                               (<p>)
                               (<p> (if summary summary ""))
                               (if keywords
@@ -65,7 +62,6 @@
               (vector-fold 
                 (lambda (i tail education)
                   (let* ((institution (json-ref 'institution education))
-                         (finished    (json-ref 'finished    education))
                          (start-date  (json-ref 'startDate   education))
                          (end-date    (json-ref 'endDate     education))
                          (title       (json-ref 'title       education))
@@ -73,7 +69,7 @@
                     (cons (list 
                             (<dt>
                               start-date " - "
-                              (if finished 
+                              (if end-date
                                  end-date 
                                  (<span> class: "label label-success" "[PRESENT]")))
                             (<dd> title " at " institution " " comments))

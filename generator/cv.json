@@ -1,19 +1,17 @@
 {
     "higher-education": [
         {
-            "finished": true,
+            "title": "System Analyst",
             "institution": "CAECE University",
             "startDate": "2010",
-            "endDate": "2014",
-            "title": "System Analyst"
+            "endDate": "2014"
         },
         {
-            "comments": "(Unfinished)",
-            "endDate": "2010",
-            "finished": true,
+            "title": "System Engineering",
             "institution": "Universidad Tecnologica Nacional",
             "startDate": "2005",
-            "title": "System Engineering"
+            "endDate": "2010",
+            "comments": "(Unfinished)"
         }
     ],
     "other-education": [
@@ -50,32 +48,21 @@
     ],
     "positions": [
         {
-            "company": {
-                "industry": "Computer Software",
-                "name": "Jampp"
-            },
-            "startDate": "1/2015",
-            "endDate": "06/2015",
-            "title": "Sr. Python Developer"
+            "company": "Jampp",
+            "title": "Sr. Python Developer",
+            "startDate": "01/2015",
+            "endDate": "06/2015"
         },
         {
-            "company": {
-                "industry": "Computer Software",
-                "name": "bevuta IT GmbH"
-            },
-            "startDate": "2/2013",
+            "company": "bevuta IT GmbH",
+            "title": "Scheme Developer",
+            "startDate": "02/2013",
             "endDate": "02/2015",
-            "title": "Scheme Developer"
+            "keywords": ["android", "scheme", "chicken scheme", "C", "jni"]
         },
         {
-            "company": {
-                "industry": "Biotechnology",
-                "name": "FuDePAN",
-                "size": "11-50 employees",
-                "type": "Nonprofit"
-            },
-            "isCurrent": false,
-            "startDate": "8/2010",
+            "company": "FuDePAN",
+            "startDate": "08/2010",
             "endDate": "01/2014",
             "title": "C++ Developer (Ad honorem)",
             "summary": "Bioinformatics oriented tools development.",
@@ -83,96 +70,58 @@
               "googletest", "googlemock", "g++", "make", "Scons", "Jenkins", "SVN", "Mercurial"]
         },
         {
-            "company": {
-                "industry": "Computer Software",
-                "name": "LambdaDev"
-            },
-            "isCurrent": true,
-            "startDate": "7/2010",
+            "company": "LambdaDev",
+            "title": "Freelance Software Engineer/Developer",
+            "startDate": "07/2010",
             "keywords": ["C++", "Python", "Java", "SOAP", "suds", "Scrapy", "Webpy", "Pylons", 
               "Google Apps Engine", "Spring", "Hibernate", "JPA2", "Maven", "Javascript", "Dojo", 
-              "jQuery", "MySQL", "PostgreSQL", "bash", "bash scripting", "SVN", "Mercurial", "Git"],
-            "title": "Freelance Software Engineer/Developer"
+              "jQuery", "MySQL", "PostgreSQL", "bash", "bash scripting", "SVN", "Mercurial", "Git"]
         },
         {
-            "company": {
-                "industry": "Biotechnology",
-                "name": "FuDePAN",
-                "size": "11-50 employees",
-                "type": "Nonprofit"
-            },
-            "endDate": "01/2013",
-            "isCurrent": false,
-            "startDate": "07/2011",
+            "company": "FuDePAN",
             "title": "Regional Coordinator for Buenos Aires (Ad honorem)",
-            "summary": "Projects and volunteers coordination."
+            "endDate": "01/2013",
+            "startDate": "07/2011",
+            "summary": "Projects and volunteers coordination"
         },
         {
-            "company": {
-                "industry": "Research",
-                "name": "CITEDEF",
-                "size": "501-1000 employees",
-                "type": "Public Company"
-            },
+            "company": "CITEDEF",
+            "title": "Becario / Groovy-Grails Developer",
             "endDate": "08/2011",
-            "isCurrent": false,
             "startDate": "04/2011",
-            "summary": "Sistema CRISIS.",
-            "title": "Becario / Groovy-Grails Developer"
+            "summary": "Sistema CRISIS"
         },
         {
-            "company": {
-                "industry": "Computer Software",
-                "name": "TeraCode",
-                "size": "51-200 employees",
-                "type": "Privately Held"
-            },
+            "company": "TeraCode",
+            "title": "Ssr. Python Developer",
             "endDate": "01/2011",
-            "isCurrent": false,
             "startDate": "04/2010",
             "summary": "Working in performable's web-site/platform",
-            "keywords": ["python", "Tornado", "django", "SQLAlchemy", "jQuery", "MySQL", "Scrum"],
-            "title": "Ssr. Python Developer"
+            "keywords": ["python", "Tornado", "django", "SQLAlchemy", "jQuery", "MySQL", "Scrum"]
         },
         {
-            "company": {
-                "industry": "Market Research",
-                "name": "Livra",
-                "size": "51-200 employees",
-                "type": "Privately Held"
-            },
+            "company": "Livra",
             "endDate": "04/2010",
-            "isCurrent": false,
             "startDate": "04/2008",
-            "summary": " Working on Livra’s portal and online marketing tools (surveys, statistics, etc).",
+            "title": "Ssr. Java Developer",
+            "summary": "Livra’s portal and online marketing tools (surveys, statistics, etc).",
             "keywords": ["Apache Wicket", "Hibernate", "JUnit", "Velocity", "Lucene", "PostgreSQL", 
               "Web Services", "Rest", "Jersey", "SOAP", "Axis", "prototype", "scriptaculous", 
-              "Eclipse", "Tomcat", "Jetty", "ant", "Maven", "SVN"],
-            "title": "Ssr. Java Developer"
+              "Eclipse", "Tomcat", "Jetty", "ant", "Maven", "SVN"]
         },
         {
-            "company": {
-                "industry": "Information Technology and Services",
-                "name": "Thales Information Systems",
-                "size": "10,001+ employees",
-                "type": "Privately Held"
-            },
-            "endDate": "04/2008",
-            "isCurrent": false,
+            "company": "Thales Information Systems",
+            "title": "Java Developer",
             "startDate": "08/2007",
-            "summary": "Developer in Thales Software Factory. IVR using avaya tools and Asterix. Web-based tools using structs, hibernate and spring.",
-            "title": "Java Developer"
+            "endDate": "04/2008",
+            "summary": "Developer in Thales Software Factory. IVR using avaya tools and Asterix. Web-based tools using structs, hibernate and spring."
         },
         {
-            "company": {
-                "industry": "Computer Software",
-                "name": "Star Technology"
-            },
-            "endDate": "12/2006",
-            "isCurrent": false,
+            "company": "Star Technology",
+            "title": "Developer",
             "startDate": "06/2006",
-            "keywords": ["SQL", "PL/SQL", "Oracle Financials", "Reports Builder", "Forms Builder"],
-            "title": "Developer"
+            "endDate": "12/2006",
+            "keywords": ["SQL", "PL/SQL", "Oracle Financials", "Reports Builder", "Forms Builder"]
         }
     ],
     "publications": [
@@ -259,7 +208,8 @@
                 "Gitlab",
                 "GitHub",
                 "Asana",
-                "Bootstrap"
+                "Bootstrap",
+                "Android"
             ],
             "name": "Others"
         },

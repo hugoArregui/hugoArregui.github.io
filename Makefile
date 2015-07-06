@@ -1,3 +1,3 @@
 generate:
 
-	csi -s generator/cv.scm > cv.html
+	csi -s generator/cv.scm

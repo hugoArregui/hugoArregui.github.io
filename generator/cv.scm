@@ -43,7 +43,7 @@
                                 (<span> class: "label label-success" "[PRESENT]"))
                               ": ")
                             (<dd>
-                              (<b> title) " at " company
+                              (<b> title) " at " (<span> class: "company" company)
                               (<p>)
                               (<p> (if summary summary ""))
                               (if keywords

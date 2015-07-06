@@ -69,7 +69,7 @@
                         (<p> date " - " (<b> title ". "))
                         (<ul> style: "list-style-type: none"
                             (<li> where ". ")
-                            (<li> authors)))
+                            (<li> (<i> authors))))
                       tail)))
             '()
             publications))))))

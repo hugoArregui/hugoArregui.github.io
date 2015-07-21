@@ -1,6 +1,4 @@
-(use html-tags sxml-transforms html-utils)
-
-(generate-sxml? #t)
+(use srfi-1 sxml-transforms)
 
 (define sxml->html
   (let ((rules `((literal *preorder* . ,(lambda (t b) b))
@@ -21,20 +19,19 @@
          (cadr r))))
 
 (define (two-cols-block data title f #!key (left-col-size 3))
-  (list
-    (<h3> title)
-    (<div>
-      (fold-right
-        (lambda (data tail)
-          (let-values (((col1 col2) (f data)))
-            (cons (<div> class: "row"
-                         (<div> class: (string-append "col-" (number->string left-col-size) " text-right")
-                                col1)
-                         (<div> class: (string-append "col-" (number->string (- 12 left-col-size)))
-                                col2))
-                  tail)))
-        '()
-        data))))
+  `((h3 ,title)
+    (div
+      ,(fold-right
+         (lambda (data tail)
+           (let-values (((col1 col2) (f data)))
+             (cons `(div (@ (class "row"))
+                         (div (@ (class ,(string-append "col-" (number->string left-col-size) " text-right")))
+                              ,col1)
+                         (div (@ (class ,(string-append "col-" (number->string (- 12 left-col-size)))))
+                              ,col2))
+                   tail)))
+         '()
+         data))))
 
 (define (positions-block)
   (two-cols-block (ref-cv-data 'positions)
@@ -48,18 +45,17 @@
                            (keywords   (ref 'keywords))
                            (title      (ref 'title)))
                       (values
-                        (<b> start-date " - "
-                             (if end-date
+                        `(b ,start-date " - "
+                            ,(if end-date
                                end-date
-                               (<span> class: "label label-success" "[PRESENT]"))
-                             "")
-                        (list
-                          (<b> title) " at " (<span> class: "company" company)
-                          (<p>)
-                          (<p> (if summary summary ""))
-                          (if keywords
-                            (<p> "Keywords: " (string-join keywords ", "))
-                            "")))))
+                               '(span (@ (class "label label-success")) "[PRESENT]"))
+                            "")
+                        `((b ,title) " at " (span (@ (class "company")) ,company)
+                                     (p)
+                                     (p ,(if summary summary ""))
+                                     ,(if keywords
+                                        `(p "Keywords: " ,(string-join keywords ", "))
+                                        "")))))
                   left-col-size: 3))
 
 (define (publications-block)
@@ -72,13 +68,13 @@
                            (title   (ref 'title))
                            (where   (ref 'where)))
                       (values
-                        (<b> date)
-                        (<p> style: "list-style-type: none"
-                              (<span> (<b> title))
-                              (<br>)
-                              (<span> where)
-                              (<br>)
-                              (<span> (<i> authors))))))
+                        `(b ,date)
+                        `(p (@ (style "list-style-type: none"))
+                            (span (b ,title))
+                            (br)
+                            (span ,where)
+                            (br)
+                            (span (i ,authors))))))
                   left-col-size: 3))
 
 (define (heducation-block)
@@ -92,10 +88,10 @@
                            (title       (ref 'title))
                            (comments    (ref 'comments)))
                       (values
-                        (<b> start-date " - " (if end-date
-                                                end-date
-                                                (<span> class: "label label-success" "[PRESENT]")))
-                        (<span> title " at " institution " " comments))))))
+                        `(b ,start-date " - " ,(if end-date
+                                                 end-date
+                                                 '(span (@ (class "label label-success" "[PRESENT]")))))
+                        `(span ,title " at " ,institution " " ,comments))))))
 
 (define (other-education-block)
   (two-cols-block (ref-cv-data 'other-education)
@@ -106,7 +102,7 @@
                            (title (ref 'title))
                            (date  (ref 'date))
                            (desc  (ref 'desc)))
-                      (values (<b> date " - " where) (<span> title))))))
+                      (values `(b ,date " - " ,where) `(span ,title))))))
 
 (define (skills-block)
   (two-cols-block (ref-cv-data 'skills)
@@ -114,39 +110,41 @@
                   (lambda (skill)
                     (let* ((name (car skill))
                            (keys (cadr skill)))
-                      (values (<b> name ":") (string-join keys ", "))))))
+                      (values `(b ,name ":") (string-join keys ", "))))))
 
 (define (cv->html)
   (sxml->html
-    (html-page
-      (list
-        (<div> class: "container"
-               (<div> class: "page-header" (<h1> "Hugo Arregui"))
-               (<div> class: "row"
-                      (<div> class: "col-sm-9"
-                             (positions-block)
-                             (publications-block)
-                             (heducation-block)
-                             (other-education-block)
-                             (skills-block))
-                      (<div> class: "col-3"
-                             (<h4> "Personal Information: ")
-                             (itemize
-                               (list
-                                 "Birth date: December 2, 1986"
-                                 "Nationality: Argentina"
-                                 (<a> href: "mailto:hugo.arregui.laboral@gmail.com" "hugo.arregui.laboral@gmail.com")))
-                             (<h4> "Networks:")
-                             (itemize
-                               (list
-                                 (<a> href: "http://ar.linkedin.com/in/hugoarregui/"      "LinkedIn Profile")
-                                 (<a> href: "https://github.com/hugoArregui"              "GitHub Profile")
-                                 (<a> href: "http://code.google.com/u/hugo.arregui/"      "Google Code Profile")
-                                 (<a> href: "https://www.ohloh.net/accounts/hugo_arregui" "Ohloh Profile"))))))
-        (<script> src: "http://code.jquery.com/jquery.js")
-        (<script> src: "js/bootstrap.min.js"))
-      charset: "utf-8"
-      css: '("css/bootstrap.min.css" "css/site.css" "css/bootstrap-glyphicons.css")
-      title: "Hugo Arregui")))
+    `(html
+       (head
+         (title "Hugo Arregui")
+         (meta (@ (http-equiv "Content-Type") (content "application/xhtml+xml; charset=utf-8")))
+         (link (@ (href "css/bootstrap.min.css") (rel "stylesheet") (type "text/css")))
+         (link (@ (href "css/bootstrap-glyphicons.css") (rel "stylesheet") (type "text/css")))
+         (link (@ (href "css/site.css") (rel "stylesheet") (type "text/css"))))
+       (body
+         (div (@ (class "container"))
+              (div (@ (class "page-header"))
+                   (h1 "Hugo Arregui"))
+              (div (@ (class "row"))
+                   (div (@ (class "col-sm-9"))
+                        ,(positions-block)
+                        ,(publications-block)
+                        ,(heducation-block)
+                        ,(other-education-block)
+                        ,(skills-block))
+                   (div (@ (class "col-3"))
+                        (h4 "Personal Information: ")
+                        (ul
+                          (li "Birth date: December 2, 1986")
+                          (li "Nationality: Argentina")
+                          (li (a (@ (href "mailto:hugo.arregui.laboral@gmail.com")) "hugo.arregui.laboral@gmail.com")))
+                        (h4 "Networks:")
+                        (ul
+                          (li (a (@ (href "http://ar.linkedin.com/in/hugoarregui/"))      "LinkedIn Profile"))
+                          (li (a (@ (href "https://github.com/hugoArregui"))              "GitHub Profile"))
+                          (li (a (@ (href "http://code.google.com/u/hugo.arregui/"))      "Google Code Profile"))
+                          (li (a (@ (href "https://www.ohloh.net/accounts/hugo_arregui")) "Ohloh Profile"))))))
+         (script (@ (src "http://code.jquery.com/jquery.js")))
+         (script (@ (src "js/bootstrap.min.js")))))))
 
 (with-output-to-file "cv.html" (lambda () (write-string (cv->html))))

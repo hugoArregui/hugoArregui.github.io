@@ -43,7 +43,8 @@
               (startDate "07/2010")
               (keywords ("C++" "Python" "Java" "SOAP" "suds" "Scrapy" "Webpy" "Pylons"
                          "Google Apps Engine" "Spring" "Hibernate" "JPA2" "Maven" "Javascript" "Dojo"
-                         "jQuery" "MySQL" "PostgreSQL" "bash" "bash scripting" "SVN" "Mercurial" "Git")))
+                         "jQuery" "MySQL" "PostgreSQL" "bash" "bash scripting" "SVN" "Mercurial" "Git"
+                         "Phonegap/cordova" "clojure" "clojurescript")))
              ((company "FuDePAN")
               (title "Regional Coordinator for Buenos Aires (Ad honorem)")
               (endDate "01/2013")
@@ -97,9 +98,9 @@
           ("C++ tools" ("googletest" "googlemock"))
           ("Java tools" ("Hibernate" "Spring" "Struts" "Wicket" "Junit"))
           ("Javascript tools" ("jQuery" "Dojo" "Prototype"))
+          ("Mobile" ("Android" "phonegap/cordova"))
           ("Others tools" ("valgrind" "gdb" "Vim" "Eclipse" "Youtrack" "Google Code"
-                           "Redmine" "Bitbucket" "Gitlab" "GitHub" "Asana" "Bootstrap"
-                           "Android"))
+                           "Redmine" "Bitbucket" "Gitlab" "GitHub" "Asana" "Bootstrap"))
           ("Version Control" ("hg" "git" "svn"))
           ("Build Systems" ("make" "scons" "ant"))
           ("Databases" ("PostgreSQL" "MySQL" "SQL Server" "Oracle"))

@@ -44,7 +44,7 @@
               (keywords ("C++" "Python" "Java" "SOAP" "suds" "Scrapy" "Webpy" "Pylons"
                          "Google Apps Engine" "Spring" "Hibernate" "JPA2" "Maven" "Javascript" "Dojo"
                          "jQuery" "MySQL" "PostgreSQL" "bash" "bash scripting" "SVN" "Mercurial" "Git"
-                         "Phonegap/cordova" "clojure" "clojurescript")))
+                         "Phonegap/cordova" "clojure" "clojurescript" "Django")))
              ((company "FuDePAN")
               (title "Regional Coordinator for Buenos Aires (Ad honorem)")
               (endDate "01/2013")

@@ -39,7 +39,7 @@
               (title "Senior Python Developer")
               (startDate "01/2015")
               (endDate "06/2015")
-              (keywords ("zeromq" "sklearn" "panda" "numpy" "marchine learning")))
+              (keywords ("zeromq" "sklearn" "pandas" "numpy" "marchine learning")))
              ((company "bevuta IT GmbH")
               (summary "Android development using java + chicken scheme + jni")
               (company-website "http://www.bevuta.com/en/")

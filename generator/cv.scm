@@ -69,17 +69,13 @@
                              (where        (ref 'where))
                              (article-link (ref 'article-link)))
                         (values
-                          `(b ,date)
-                          `(p
-                             (span (b ,title))
-                             (br)
-                             (span ,where)
-                             (br)
-                             (span (i ,authors))
-                             ,(if article-link
-                                `((br)
-                                  (a (@ (href ,article-link)) "link to the article"))
-                                '())))))
+                          `(p (b ,date))
+                          `(div
+                             (p (b ,title) ,(if article-link
+                                                 `(a (@ (href ,article-link)) (small "(read it)"))
+                                                 '()))
+                             (p ,where)
+                             (p (i ,authors))))))
                     left-col-size: 3))
 
 (define (heducation-block)

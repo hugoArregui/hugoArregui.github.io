@@ -24,6 +24,7 @@
                    ((date "2010") (title "C++ Internals") (where "FuDePAN"))
                    ((date "2010") (title "C/C++ Good Practices") (where "FuDePAN"))))
  (positions (((company "Auth0")
+              (company-website "https://auth0.com/")
               (title "Engineer")
               (startDate "03/2016")
               (keywords ("node" "express" "jwt")))

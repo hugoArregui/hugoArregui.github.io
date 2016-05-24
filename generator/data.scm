@@ -27,7 +27,7 @@
               (company-website "https://auth0.com/")
               (title "Engineer")
               (startDate "03/2016")
-              (keywords ("node" "express" "jwt")))
+              (keywords ("node" "express" "jwt" "elasticsearch" "mongodb")))
              ((company "LambdaDev")
               (title "Freelance Software Engineer/Developer")
               (startDate "07/2010")

@@ -110,7 +110,7 @@
 
 (define (skills-block)
   (two-cols-section (ref-cv-data 'skills)
-                    "Computer Skills"
+                    "Skills"
                     (lambda (skill)
                       (let* ((name (car skill))
                              (keys (cadr skill)))

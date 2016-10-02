@@ -1,4 +1,4 @@
-(use srfi-1 sxml-transforms html-conversion-rules )
+(use srfi-1 sxml-transforms html-conversion-rules)
 
 (define cv-data (with-input-from-file "generator/data.scm" read))
 

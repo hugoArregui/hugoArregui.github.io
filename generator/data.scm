@@ -116,10 +116,10 @@
  (skills (("Languages" ("C++" "Python" "Java" "Scheme" "Bash Scripting/AWK" "JavaScript" "Groovy" "Ruby" "NodeJS"))
           ("Python tools" ("django" "pylons" "tornado" "webpy" "unittest" "pymock" "flake8" "flask"))
           ("C++ tools" ("googletest" "googlemock"))
-          ("NodeJS tools" ("restify" "express" "hapi"))
+          ("NodeJS tools" ("restify" "express" "hapi" "lodash"))
           ("Ruby tools" ("sinatra" "sequel"))
           ("Java tools" ("Hibernate" "Spring" "Struts" "Wicket" "Junit"))
-          ("Javascript tools" ("jQuery" "Dojo" "Prototype"))
+          ("Javascript tools" ("jQuery" "Dojo" "Prototype" "lodash"))
           ("Mobile" ("Android" "phonegap/cordova"))
           ("Others tools" ("valgrind" "gdb" "Vim" "Eclipse" "Youtrack" "Google Code" "redis"
                            "Redmine" "Bitbucket" "Gitlab" "GitHub" "Asana" "Bootstrap" "ElasticSearch"))

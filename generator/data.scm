@@ -134,7 +134,10 @@
     (endDate "2010")
     (comments "(Unfinished)"))))
  (other-education
-  (((date "2013")
+  (((date "2017")
+    (title "Advanced Elasticsearch: Data Modeling")
+    (where "Elastic"))
+   ((date "2013")
     (title "Image and video processing: From Mars to Hollywood with a stop at the hospital")
     (where "Coursera"))
    ((date "2012")

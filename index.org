@@ -1,0 +1,113 @@
+#+OPTIONS: num:nil toc:nil tags:nil
+# #+EXCLUDE_TAGS: htmlonly
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
+#+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
+
+* Hugo Arregui
+
+- Birth date: December 2, 1986
+- Nationality: Argentina
+- hugo.arregui.laboral at gmail.com
+- [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]]
+- [[https://github.com/hugoArregui][GitHub]]
+- [[https://www.openhub.net/accounts/hugo_arregui][OpenHub]]
+
+** Some things I like                                             :htmlonly:
+
+   - Learning new things.
+   - Working remotely, I been doing so since 2011.
+   - Functional programming. Specially in scheme.
+   - I love vim, but currently I'm using Emacs + evil mode [[https://github.com/hugoArregui/emacsconfig][(here is my config)]]
+   - Arch linux!
+
+** Some things I would like to do                                  :htmlonly:
+
+   - Although I had worked in C and C++ in the past, I would like to improve my knowledge of low level programming and low level optimizations.
+   - Some languages I never tried and I'm curious about: Rust, Julia, Go.
+   - Some languages I know, but I want to dig deeper in: Clojure, GNU Guile, Haskell.
+
+* Professional Experience
+
+** 03/2016 - [ PRESENT ]: Engineer at [[https://auth0.com/][Auth0]]
+
+   - Development and maintenance of Auth0's Management API
+   - Support users search engine using ElasticSearch
+   - Stack: /nodejs, express, JWT, elasticsearch, mongodb, hapi.js, AWS, git, GitHub, Kibana, Datadog, valgrind/
+
+** 07/2010 - [ PRESENT ]: Freelance Software Engineer at LambdaDev
+
+   - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
+   - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/
+   - Developed a multi-platform mobile app to organize and manage social events. /(clojurescript clojure phonegap/cordova)/
+   - Provided freelance development services for [[http://www.ticketek.com.ar/][Ticketek]]. /(python django)/
+   - Developed a crawler infraestructure for an important deal network. /(python scrapy flask)/
+
+** 01/2015 - 06/2015: Senior Python Developer at [[http://jampp.com/][Jampp]]
+
+   - Worked on Jampp's Machine Learning backend.
+   - Stack: /zeromq, sklearn, pandas, numpy, marchine learning, PostgreSQL/
+
+** 02/2013 - 02/2015: Scheme Developer at [[http://www.bevuta.com/en/][bevuta IT GmbH]]
+
+   - Worked on the android version of sayHey (a chat app) using Java + CHICKEN scheme + JNI.
+   - Stack: /android, scheme, CHICKEN scheme, C, JNI, SQLite/
+
+   - Part of this work is open-source, for example [[https://github.com/chicken-mobile/jni][the CHICKEN bindings]] for Java (in which I worked a lot)
+
+** 08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN
+
+   - Developed and implemented bioinformatic tools.
+   - Stack: /C++, Template Metaprogramming, googletest, googlemock, g++, make, Scons, Jenkins, SVN, Mercurial, gdb/
+
+** 07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN
+
+   - Volunteers coordination. Project management.
+
+** 04/2010 - 01/2011: Ssr. Python Developer at TeraCode
+
+   - Worked on Performable's web-site/platform.
+   - Stack: /python, Tornado, django, SQLAlchemy, jQuery, MySQL, Scrum/
+
+** 04/2008 - 04/2010: Ssr. Java Developer at Livra
+
+   - Worked on Livra’s website. Creating and maintaining marketing tools for surveys, statistics, etc.
+   - Stack: /java, Apache Wicket, wicket, Hibernate, JUnit, Velocity, Lucene, PostgreSQL, Web Services, Rest, Jersey, SOAP, Axis, prototype, scriptaculous, Eclipse, Tomcat, Jetty, ant, Maven, SVN, Prototype/
+
+** 08/2007 - 04/2008: Java Developer at Thales Information Systems
+
+   - Stack: /IVR, asterix, structs, hibernate, spring/
+
+* Publications
+
+** 2012. Curiously Recursive Template Problems with Aspect Oriented Programming
+
+ [[http://accu.org/index.php/journals/1916][ACCU Overload Magazine #109, June 2012]]
+
+ Hugo Arregui, Carlos Castro, Daniel Gutson
+
+** 2011. Biopp2: biological alphabet manipulation library
+
+ 2do Congreso Argentino de Biologia Computacional
+
+ Hugo Arregui, Daniel Gutson
+
+** 2011. Backbones Generator v2
+
+ 2do Congreso Argentino de Biologia Computacional
+
+ Hugo Arregui, Rodrigo Castaño, Lucía Lauría, Rafael Garabato, Elmer Fernández, Marcos Villarreal
+
+* Higher Education
+
+  - 2010 - 2014: System Analyst at CAECE University
+  - 2005 - 2010: System Engineering at Universidad Tecnologica Nacional (Unfinished)
+
+* Other Education
+
+  - 2017 - Elastic. Advanced Elasticsearch: Data Modeling
+  - 2013 - Coursera. Image and video processing: From Mars to Hollywood with a stop at the hospital
+  - 2012 - Coursera. Algorithms: Design and Analysis Part I
+  - 2011 - ECI 2011 (UBA). Programación de Seguridad mediante Bibliotecas - (Security programming using libraries)
+  - 2011 - ECI 2011 (UBA). Programación distribuida y paralela usando MPI - (Distributed and parallel programming using MPI)
+  - 2010 - FuDePAN. C++ Internals
+  - 2010 - FuDePAN. C/C++ Good Practices

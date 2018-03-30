@@ -5,19 +5,17 @@
 
 * Hugo Arregui
 
-- Birth date: December 2, 1986
-- Nationality: Argentina
-- hugo.arregui.laboral at gmail.com
-- [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]]
-- [[https://github.com/hugoArregui][GitHub]]
-- [[https://www.openhub.net/accounts/hugo_arregui][OpenHub]]
+- Birth date: :: December 2, 1986
+- Nationality: :: Argentina
+- Email: :: hugo.arregui.laboral at gmail.com
+- Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://www.openhub.net/accounts/hugo_arregui][OpenHub]]
 
 ** Some things I like                                             :htmlonly:
 
    - Learning new things.
    - Working remotely, I been doing so since 2011.
    - Functional programming. Specially in scheme.
-   - I love vim, but currently I'm using Emacs + evil mode [[https://github.com/hugoArregui/emacsconfig][(here is my config)]]
+   - I love vim, but currently I'm using Emacs + evil mode [[https://github.com/hugoArregui/emacsconfig][(my config)]]
    - Arch linux!
 
 ** Some things I would like to do                                  :htmlonly:
@@ -79,35 +77,29 @@
 
 * Publications
 
-** 2012. Curiously Recursive Template Problems with Aspect Oriented Programming
-
- [[http://accu.org/index.php/journals/1916][ACCU Overload Magazine #109, June 2012]]
+- 2012 - [[http://accu.org/index.php/journals/1916][ACCU Overload Magazine #109, June 2012]] :: Curiously Recursive Template Problems with Aspect Oriented Programming
 
  Hugo Arregui, Carlos Castro, Daniel Gutson
 
-** 2011. Biopp2: biological alphabet manipulation library
-
- 2do Congreso Argentino de Biologia Computacional
+- 2011 - 2do Congreso Argentino de Biologia Computacional :: Biopp2, biological alphabet manipulation library
 
  Hugo Arregui, Daniel Gutson
 
-** 2011. Backbones Generator v2
-
- 2do Congreso Argentino de Biologia Computacional
+- 2011 - 2do Congreso Argentino de Biologia Computacional :: Backbones Generator v2
 
  Hugo Arregui, Rodrigo Castaño, Lucía Lauría, Rafael Garabato, Elmer Fernández, Marcos Villarreal
 
 * Higher Education
 
-  - 2010 - 2014: System Analyst at CAECE University
-  - 2005 - 2010: System Engineering at Universidad Tecnologica Nacional (Unfinished)
+  - 2010 - 2014 :: System Analyst at CAECE University
+  - 2005 - 2010 :: System Engineering at Universidad Tecnologica Nacional (Unfinished)
 
 * Other Education
 
-  - 2017 - Elastic. Advanced Elasticsearch: Data Modeling
-  - 2013 - Coursera. Image and video processing: From Mars to Hollywood with a stop at the hospital
-  - 2012 - Coursera. Algorithms: Design and Analysis Part I
-  - 2011 - ECI 2011 (UBA). Programación de Seguridad mediante Bibliotecas - (Security programming using libraries)
-  - 2011 - ECI 2011 (UBA). Programación distribuida y paralela usando MPI - (Distributed and parallel programming using MPI)
-  - 2010 - FuDePAN. C++ Internals
-  - 2010 - FuDePAN. C/C++ Good Practices
+  - 2017 - Elastic :: Advanced Elasticsearch: Data Modeling
+  - 2013 - Coursera :: Image and video processing: From Mars to Hollywood with a stop at the hospital
+  - 2012 - Coursera :: Algorithms: Design and Analysis Part I
+  - 2011 - ECI 2011 (UBA) :: Programación de Seguridad mediante Bibliotecas - (Security programming using libraries)
+  - 2011 - ECI 2011 (UBA) :: Programación distribuida y paralela usando MPI - (Distributed and parallel programming using MPI)
+  - 2010 - FuDePAN :: C++ Internals
+  - 2010 - FuDePAN :: C/C++ Good Practices

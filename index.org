@@ -32,7 +32,7 @@
    - Support users search engine using ElasticSearch
    - Stack: /nodejs, express, JWT, elasticsearch, mongodb, hapi.js, AWS, git, GitHub, Kibana, Datadog, valgrind/
 
-** 07/2010 - [ PRESENT ]: Freelance Software Engineer at LambdaDev
+** 07/2010 - 03/2016: Freelance Software Engineer at LambdaDev
 
    - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
    - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/

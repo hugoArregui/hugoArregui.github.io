@@ -1,9 +1,16 @@
-#+OPTIONS: num:nil toc:nil tags:nil
+#+OPTIONS: num:nil toc:nil tags:nil date:nil
+#+TITLE: Hugo Arregui
 # #+EXCLUDE_TAGS: htmlonly
+#+LaTeX_CLASS: koma-article
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
+#+LaTeX_CLASS_OPTIONS: [a4paper,twocolumn]
 #+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
-
-* Hugo Arregui
+#+LaTeX_HEADER: \usepackage{paralist}
+#+LaTeX_HEADER: \let\itemize\compactitem
+#+LaTeX_HEADER: \let\description\compactdesc
+#+LaTeX_HEADER: \let\enumerate\compactenum
+#+LaTeX_HEADER: \KOMAoptions{fontsize=8pt}
 
 - Birth date: :: December 2, 1986
 - Nationality: :: Argentina
@@ -32,14 +39,6 @@
    - Support users search engine using ElasticSearch
    - Stack: /nodejs, express, JWT, elasticsearch, mongodb, hapi.js, AWS, git, GitHub, Kibana, Datadog, valgrind/
 
-** 07/2010 - 03/2016: Freelance Software Engineer at LambdaDev
-
-   - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
-   - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/
-   - Developed a multi-platform mobile app to organize and manage social events. /(clojurescript clojure phonegap/cordova)/
-   - Provided freelance development services for [[http://www.ticketek.com.ar/][Ticketek]]. /(python django)/
-   - Developed a crawler infraestructure for an important deal network. /(python scrapy flask)/
-
 ** 01/2015 - 06/2015: Senior Python Developer at [[http://jampp.com/][Jampp]]
 
    - Worked on Jampp's Machine Learning backend.
@@ -60,6 +59,14 @@
 ** 07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN
 
    - Volunteers coordination. Project management.
+
+** 07/2010 - 03/2016: Freelance Software Engineer
+
+   - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
+   - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/
+   - Developed a multi-platform mobile app to organize and manage social events. /(clojurescript clojure phonegap/cordova)/
+   - Provided freelance development services for [[http://www.ticketek.com.ar/][Ticketek]]. /(python django)/
+   - Developed a crawler infraestructure for an important deal network. /(python scrapy flask)/
 
 ** 04/2010 - 01/2011: Ssr. Python Developer at TeraCode
 
@@ -89,13 +96,9 @@
 
  Hugo Arregui, Rodrigo Castaño, Lucía Lauría, Rafael Garabato, Elmer Fernández, Marcos Villarreal
 
-* Higher Education
+* Education
 
   - 2010 - 2014 :: System Analyst at CAECE University
-  - 2005 - 2010 :: System Engineering at Universidad Tecnologica Nacional (Unfinished)
-
-* Other Education
-
   - 2017 - Elastic :: Advanced Elasticsearch: Data Modeling
   - 2013 - Coursera :: Image and video processing: From Mars to Hollywood with a stop at the hospital
   - 2012 - Coursera :: Algorithms: Design and Analysis Part I
@@ -103,3 +106,4 @@
   - 2011 - ECI 2011 (UBA) :: Programación distribuida y paralela usando MPI - (Distributed and parallel programming using MPI)
   - 2010 - FuDePAN :: C++ Internals
   - 2010 - FuDePAN :: C/C++ Good Practices
+  - 2005 - 2010 :: System Engineering at Universidad Tecnologica Nacional (Unfinished)

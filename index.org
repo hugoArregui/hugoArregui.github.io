@@ -22,7 +22,7 @@
    - Learning new things.
    - Working remotely, I been doing so since 2011.
    - Functional programming. Specially in scheme.
-   - I love vim, but currently I'm using Emacs + evil mode [[https://github.com/hugoArregui/emacsconfig][(my config)]]
+   - I love vim, but currently I'm using Emacs + evil mode
    - Arch linux!
 
 ** Some things I would like to do                                  :htmlonly:

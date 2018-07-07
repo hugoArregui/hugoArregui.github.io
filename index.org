@@ -1,7 +1,7 @@
 #+OPTIONS: num:nil toc:nil tags:nil date:nil
 #+TITLE: Hugo Arregui
 # #+EXCLUDE_TAGS: htmlonly
-#+LaTeX_CLASS: koma-article
+#+LaTeX_CLASS: scrlttr2
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
 #+LaTeX_CLASS_OPTIONS: [a4paper,twocolumn]
@@ -15,7 +15,7 @@
 - Birth date: :: December 2, 1986
 - Nationality: :: Argentina
 - Email: :: hugo.arregui.laboral at gmail.com
-- Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://www.openhub.net/accounts/hugo_arregui][OpenHub]]
+- Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]]
 
 ** Some things I like                                             :htmlonly:
 

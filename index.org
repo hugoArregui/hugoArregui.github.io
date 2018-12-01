@@ -21,19 +21,19 @@
 
    - Learning new things.
    - Working remotely, I been doing so since 2011.
-   - Functional programming. Specially in scheme.
-   - I love vim, but currently I'm using Emacs + evil mode
+   - Functional programming. Especially in scheme.
+   - I love vim, but currently, I'm using Emacs + evil mode
    - Arch linux!
 
 ** Some things I would like to do                                  :htmlonly:
 
-   - Although I had worked in C and C++ in the past, I would like to improve my knowledge of low level programming and low level optimizations.
+   - Although I had worked in C and C++ in the past, I would like to improve my knowledge of low-level programming and low-level optimizations.
    - Some languages I never tried and I'm curious about: Rust, Julia, Go.
-   - Some languages I know, but I want to dig deeper in: Clojure, GNU Guile, Haskell.
+   - Some languages I know, but I want to dig deeper in Clojure, GNU Guile, Haskell.
 
 * Professional Experience
 
-** 09/2018 - [ PRESENT ]: Engineer at [[https://decentraland.org][Decentraland]]
+** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland]]
 ** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]]
 
    - Development and maintenance of Auth0's Management API
@@ -50,7 +50,7 @@
    - Worked on the android version of sayHey (a chat app) using Java + CHICKEN scheme + JNI.
    - Stack: /android, scheme, CHICKEN scheme, C, JNI, SQLite/
 
-   - Part of this work is open-source, for example [[https://github.com/chicken-mobile/jni][the CHICKEN bindings]] for Java (in which I worked a lot)
+   - Part of this work is open-source, for example, [[https://github.com/chicken-mobile/jni][the CHICKEN bindings]] for Java (in which I worked a lot)
 
 ** 08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN
 
@@ -67,11 +67,11 @@
    - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/
    - Developed a multi-platform mobile app to organize and manage social events. /(clojurescript clojure phonegap/cordova)/
    - Provided freelance development services for [[http://www.ticketek.com.ar/][Ticketek]]. /(python django)/
-   - Developed a crawler infraestructure for an important deal network. /(python scrapy flask)/
+   - Developed a crawler infrastructure for an important deal network. /(python scrapy flask)/
 
 ** 04/2010 - 01/2011: Ssr. Python Developer at TeraCode
 
-   - Worked on Performable's web-site/platform.
+   - Worked on Performable's website/platform.
    - Stack: /python, Tornado, django, SQLAlchemy, jQuery, MySQL, Scrum/
 
 ** 04/2008 - 04/2010: Ssr. Java Developer at Livra

@@ -34,6 +34,7 @@
 * Professional Experience
 
 ** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland's]] Backend Team
+   - Stack: /golang/
 ** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]]
 
    - Development and maintenance of Auth0's Management API

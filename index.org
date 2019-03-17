@@ -1,16 +1,14 @@
 #+OPTIONS: num:nil toc:nil tags:nil date:nil
 #+TITLE: Hugo Arregui
-# #+EXCLUDE_TAGS: htmlonly
-#+LaTeX_CLASS: scrlttr2
+#+EXCLUDE_TAGS: htmlonly
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
-#+LaTeX_CLASS_OPTIONS: [a4paper,twocolumn]
+#+LaTeX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
 #+LaTeX_HEADER: \usepackage{paralist}
 #+LaTeX_HEADER: \let\itemize\compactitem
 #+LaTeX_HEADER: \let\description\compactdesc
 #+LaTeX_HEADER: \let\enumerate\compactenum
-#+LaTeX_HEADER: \KOMAoptions{fontsize=8pt}
 
 - Birth date: :: December 2, 1986
 - Nationality: :: Argentina

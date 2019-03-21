@@ -13,7 +13,7 @@
 - Birth date: :: December 2, 1986
 - Nationality: :: Argentina
 - Email: :: hugo.arregui.laboral at gmail.com
-- Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]]
+- Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://gitlab.com/hugoArregui][GitLab]]
 
 ** Some things I like                                             :htmlonly:
 

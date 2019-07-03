@@ -1,6 +1,5 @@
 #+OPTIONS: num:nil toc:nil tags:nil date:nil
 #+TITLE: Hugo Arregui
-#+EXCLUDE_TAGS: htmlonly
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
 #+LaTeX_CLASS_OPTIONS: [a4paper]
@@ -15,52 +14,37 @@
 - Email: :: hugo.arregui.laboral at gmail.com
 - Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://gitlab.com/hugoArregui][GitLab]]
 
-** Some things I like                                             :htmlonly:
-
-   - Learning new things.
-   - Working remotely, I been doing so since 2011.
-   - Functional programming. Especially in scheme.
-   - I love vim, but currently, I'm using Emacs + evil mode
-   - Arch linux!
-
-** Some things I would like to do                                  :htmlonly:
-
-   - Although I had worked in C and C++ in the past, I would like to improve my knowledge of low-level programming and low-level optimizations.
-   - Some languages I never tried and I'm curious about: Rust, Julia.
-   - Some languages I know, but I want to dig deeper in Clojure, GNU Guile, Haskell.
-
 * Professional Experience
 
-** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland's]] Backend Team
-   - Stack: /golang/
-** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]]
-
+** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland's]] Backend Team (Working remotely)
+   - Design and implement Decentraland's platform: identity, communications,
+     user's shared state.
+   - Stack: /golang, webrtc, auth0/
+** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]] (Working remotely)
    - Development and maintenance of Auth0's Management API
    - Support users search engine using ElasticSearch
    - Stack: /nodejs, express, JWT, elasticsearch, mongodb, hapi.js, AWS, git, GitHub, Kibana, Datadog, valgrind/
 
-** 01/2015 - 06/2015: Senior Python Developer at [[http://jampp.com/][Jampp]]
-
+** 01/2015 - 06/2015: Senior Python Developer at [[http://jampp.com/][Jampp]] (Working remotely)
    - Worked on Jampp's Machine Learning backend.
    - Stack: /zeromq, sklearn, pandas, numpy, marchine learning, PostgreSQL/
 
-** 02/2013 - 02/2015: Scheme Developer at [[http://www.bevuta.com/en/][bevuta IT GmbH]]
-
+** 02/2013 - 02/2015: Scheme Developer at [[http://www.bevuta.com/en/][bevuta IT GmbH]] (Working remotely)
    - Worked on the android version of sayHey (a chat app) using Java + CHICKEN scheme + JNI.
    - Stack: /android, scheme, CHICKEN scheme, C, JNI, SQLite/
 
    - Part of this work is open-source, for example, [[https://github.com/chicken-mobile/jni][the CHICKEN bindings]] for Java (in which I worked a lot)
 
-** 08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN
+** 08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN (Working remotely)
 
    - Developed and implemented bioinformatic tools.
    - Stack: /C++, Template Metaprogramming, googletest, googlemock, g++, make, Scons, Jenkins, SVN, Mercurial, gdb/
 
-** 07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN
+** 07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN (Working remotely)
 
    - Volunteers coordination. Project management.
 
-** 07/2010 - 03/2016: Freelance Software Engineer
+** 07/2010 - 03/2016: Freelance Software Engineer (Working remotely)
 
    - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
    - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/

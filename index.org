@@ -16,7 +16,7 @@
 
 * Professional Experience
 
-** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland's]] Backend Team (Working remotely)
+** 09/2018 - [ PRESENT ]: Tech Leader at [[https://decentraland.org][Decentraland]]'s Backend Team (Working remotely)
    - Design and implement Decentraland's platform: identity, communications,
      user's shared state.
    - Stack: /golang, webrtc, auth0/

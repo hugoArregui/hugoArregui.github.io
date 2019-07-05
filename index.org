@@ -1,6 +1,6 @@
 #+OPTIONS: num:nil toc:nil tags:nil date:nil
 #+TITLE: Hugo Arregui
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/solarized-dark.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/latex.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/css/custom.css" />
 #+LaTeX_CLASS_OPTIONS: [a4paper]
 #+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
@@ -68,17 +68,9 @@
 
 * Publications
 
-- 2012 - [[http://accu.org/index.php/journals/1916][ACCU Overload Magazine #109, June 2012]] :: Curiously Recursive Template Problems with Aspect Oriented Programming
-
- Hugo Arregui, Carlos Castro, Daniel Gutson
-
-- 2011 - 2do Congreso Argentino de Biologia Computacional :: Biopp2, biological alphabet manipulation library
-
- Hugo Arregui, Daniel Gutson
-
-- 2011 - 2do Congreso Argentino de Biologia Computacional :: Backbones Generator v2
-
- Hugo Arregui, Rodrigo Castaño, Lucía Lauría, Rafael Garabato, Elmer Fernández, Marcos Villarreal
+- 2012 - [[http://accu.org/index.php/journals/1916][ACCU Overload Magazine #109, June 2012]]: Curiously Recursive Template Problems with Aspect Oriented Programming. Hugo Arregui, Carlos Castro, Daniel Gutson
+- 2011 - 2do Congreso Argentino de Biologia Computacional: Biopp2, biological alphabet manipulation library. Hugo Arregui, Daniel Gutson
+- 2011 - 2do Congreso Argentino de Biologia Computacional: Backbones Generator v2. Hugo Arregui, Rodrigo Castaño, Lucía Lauría, Rafael Garabato, Elmer Fernández, Marcos Villarreal
 
 * Education
 

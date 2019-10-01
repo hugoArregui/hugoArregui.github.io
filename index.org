@@ -27,7 +27,7 @@
 
 ** 01/2015 - 06/2015: Senior Python Developer at [[http://jampp.com/][Jampp]] (Working remotely)
    - Worked on Jampp's Machine Learning backend.
-   - Stack: /zeromq, sklearn, pandas, numpy, marchine learning, PostgreSQL/
+   - Stack: /zeromq, sklearn, pandas, numpy, machine learning, PostgreSQL/
 
 ** 02/2013 - 02/2015: Scheme Developer at [[http://www.bevuta.com/en/][bevuta IT GmbH]] (Working remotely)
    - Worked on the android version of sayHey (a chat app) using Java + CHICKEN scheme + JNI.
@@ -47,7 +47,7 @@
 ** 07/2010 - 03/2016: Freelance Software Engineer (Working remotely)
 
    - Developed issue tracking system for an important petrol company. /(python django psql jQuery javascript)/
-   - Provided consulting services for a real state online portal. /(ruby sequel sinatra redis)/
+   - Provided consulting services for a real estate online portal. /(ruby sequel sinatra redis)/
    - Developed a multi-platform mobile app to organize and manage social events. /(clojurescript clojure phonegap/cordova)/
    - Provided freelance development services for [[http://www.ticketek.com.ar/][Ticketek]]. /(python django)/
    - Developed a crawler infrastructure for an important deal network. /(python scrapy flask)/

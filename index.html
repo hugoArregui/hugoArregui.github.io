@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-04 mar 17:25 -->
+<!-- 2020-06-25 jue 20:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hugo Arregui</title>
@@ -160,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -186,7 +199,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -238,32 +251,24 @@ for the JavaScript code in this tag.
 <dt>Links:</dt><dd><a href="http://ar.linkedin.com/in/hugoarregui/">LinkedIn</a>, <a href="https://github.com/hugoArregui">GitHub</a>, <a href="https://gitlab.com/hugoArregui">GitLab</a></dd>
 </dl>
 
-<div id="outline-container-org3184f2d" class="outline-2">
-<h2 id="org3184f2d">Professional Experience</h2>
-<div class="outline-text-2" id="text-org3184f2d">
+<div id="outline-container-org4260aba" class="outline-2">
+<h2 id="org4260aba">Professional Experience</h2>
+<div class="outline-text-2" id="text-org4260aba">
 </div>
-<div id="outline-container-org11a8007" class="outline-3">
-<h3 id="org11a8007">11/2019 - [ PRESENT ]: Engineer at <a href="https://decentraland.org">Decentraland</a>'s Special Projects Team (Working remotely)</h3>
-<div class="outline-text-3" id="text-org11a8007">
-<ul class="org-ul">
-<li>Research and development</li>
-<li>Stack: <i>C++, unreal</i></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org518725c" class="outline-3">
-<h3 id="org518725c">09/2018 - 11/2019: Tech Leader at <a href="https://decentraland.org">Decentraland</a>'s Backend Team (Working remotely)</h3>
-<div class="outline-text-3" id="text-org518725c">
+<div id="outline-container-org923a81e" class="outline-3">
+<h3 id="org923a81e">09/2018 - 03/2020: Tech Leader at <a href="https://decentraland.org">Decentraland</a> (Working remotely)</h3>
+<div class="outline-text-3" id="text-org923a81e">
 <ul class="org-ul">
 <li>Design and implement Decentraland's platform: identity, communications,
 user's shared state.</li>
-<li>Stack: <i>golang, webrtc, auth0</i></li>
+<li>Research and development</li>
+<li>Stack: <i>golang, webrtc, auth0, C++, Unreal Engine</i></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5724831" class="outline-3">
-<h3 id="org5724831">03/2016 - 09/2018: Engineer at <a href="https://auth0.com/">Auth0</a> (Working remotely)</h3>
-<div class="outline-text-3" id="text-org5724831">
+<div id="outline-container-org1be460c" class="outline-3">
+<h3 id="org1be460c">03/2016 - 09/2018: Engineer at <a href="https://auth0.com/">Auth0</a> (Working remotely)</h3>
+<div class="outline-text-3" id="text-org1be460c">
 <ul class="org-ul">
 <li>Development and maintenance of Auth0's Management API</li>
 <li>Support users search engine using ElasticSearch</li>
@@ -272,9 +277,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org6d4b814" class="outline-3">
-<h3 id="org6d4b814">01/2015 - 06/2015: Senior Python Developer at <a href="http://jampp.com/">Jampp</a> (Working remotely)</h3>
-<div class="outline-text-3" id="text-org6d4b814">
+<div id="outline-container-org7e7824e" class="outline-3">
+<h3 id="org7e7824e">01/2015 - 06/2015: Senior Python Developer at <a href="http://jampp.com/">Jampp</a> (Working remotely)</h3>
+<div class="outline-text-3" id="text-org7e7824e">
 <ul class="org-ul">
 <li>Worked on Jampp's Machine Learning backend.</li>
 <li>Stack: <i>zeromq, sklearn, pandas, numpy, machine learning, PostgreSQL</i></li>
@@ -282,9 +287,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org860cceb" class="outline-3">
-<h3 id="org860cceb">02/2013 - 02/2015: Scheme Developer at <a href="http://www.bevuta.com/en/">bevuta IT GmbH</a> (Working remotely)</h3>
-<div class="outline-text-3" id="text-org860cceb">
+<div id="outline-container-orgcd125e9" class="outline-3">
+<h3 id="orgcd125e9">02/2013 - 02/2015: Scheme Developer at <a href="http://www.bevuta.com/en/">bevuta IT GmbH</a> (Working remotely)</h3>
+<div class="outline-text-3" id="text-orgcd125e9">
 <ul class="org-ul">
 <li>Worked on the android version of sayHey (a chat app) using Java + CHICKEN scheme + JNI.</li>
 <li>Stack: <i>android, scheme, CHICKEN scheme, C, JNI, SQLite</i></li>
@@ -294,9 +299,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-orgdf51446" class="outline-3">
-<h3 id="orgdf51446">08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN (Working remotely)</h3>
-<div class="outline-text-3" id="text-orgdf51446">
+<div id="outline-container-orgcc3d702" class="outline-3">
+<h3 id="orgcc3d702">08/2010 - 01/2014: C++ Developer (Ad honorem) at FuDePAN (Working remotely)</h3>
+<div class="outline-text-3" id="text-orgcc3d702">
 <ul class="org-ul">
 <li>Developed and implemented bioinformatic tools.</li>
 <li>Stack: <i>C++, Template Metaprogramming, googletest, googlemock, g++, make, Scons, Jenkins, SVN, Mercurial, gdb</i></li>
@@ -304,18 +309,18 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org835db10" class="outline-3">
-<h3 id="org835db10">07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN (Working remotely)</h3>
-<div class="outline-text-3" id="text-org835db10">
+<div id="outline-container-org0dc8b1b" class="outline-3">
+<h3 id="org0dc8b1b">07/2011 - 01/2013: Regional Coordinator for Buenos Aires (Ad honorem) at FuDePAN (Working remotely)</h3>
+<div class="outline-text-3" id="text-org0dc8b1b">
 <ul class="org-ul">
 <li>Volunteers coordination. Project management.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5b3fa7b" class="outline-3">
-<h3 id="org5b3fa7b">07/2010 - 03/2016: Freelance Software Engineer (Working remotely)</h3>
-<div class="outline-text-3" id="text-org5b3fa7b">
+<div id="outline-container-orgda4476e" class="outline-3">
+<h3 id="orgda4476e">07/2010 - 03/2016: Freelance Software Engineer (Working remotely)</h3>
+<div class="outline-text-3" id="text-orgda4476e">
 <ul class="org-ul">
 <li>Developed issue tracking system for an important petrol company. <i>(python django psql jQuery javascript)</i></li>
 <li>Provided consulting services for a real estate online portal. <i>(ruby sequel sinatra redis)</i></li>
@@ -326,9 +331,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-orgc06a8d0" class="outline-3">
-<h3 id="orgc06a8d0">04/2010 - 01/2011: Ssr. Python Developer at TeraCode</h3>
-<div class="outline-text-3" id="text-orgc06a8d0">
+<div id="outline-container-org452441a" class="outline-3">
+<h3 id="org452441a">04/2010 - 01/2011: Ssr. Python Developer at TeraCode</h3>
+<div class="outline-text-3" id="text-org452441a">
 <ul class="org-ul">
 <li>Worked on Performable's website/platform.</li>
 <li>Stack: <i>python, Tornado, django, SQLAlchemy, jQuery, MySQL, Scrum</i></li>
@@ -336,9 +341,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-orgc2fe77e" class="outline-3">
-<h3 id="orgc2fe77e">04/2008 - 04/2010: Ssr. Java Developer at Livra</h3>
-<div class="outline-text-3" id="text-orgc2fe77e">
+<div id="outline-container-orgc39645e" class="outline-3">
+<h3 id="orgc39645e">04/2008 - 04/2010: Ssr. Java Developer at Livra</h3>
+<div class="outline-text-3" id="text-orgc39645e">
 <ul class="org-ul">
 <li>Worked on Livra’s website. Creating and maintaining marketing tools for surveys, statistics, etc.</li>
 <li>Stack: <i>java, Apache Wicket, wicket, Hibernate, JUnit, Velocity, Lucene, PostgreSQL, Web Services, Rest, Jersey, SOAP, Axis, prototype, scriptaculous, Eclipse, Tomcat, Jetty, ant, Maven, SVN, Prototype</i></li>
@@ -346,9 +351,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org1ed2041" class="outline-3">
-<h3 id="org1ed2041">08/2007 - 04/2008: Java Developer at Thales Information Systems</h3>
-<div class="outline-text-3" id="text-org1ed2041">
+<div id="outline-container-orge30ea9c" class="outline-3">
+<h3 id="orge30ea9c">08/2007 - 04/2008: Java Developer at Thales Information Systems</h3>
+<div class="outline-text-3" id="text-orge30ea9c">
 <ul class="org-ul">
 <li>Stack: <i>IVR, asterix, structs, hibernate, spring</i></li>
 </ul>
@@ -356,9 +361,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org55f6dc2" class="outline-2">
-<h2 id="org55f6dc2">Publications</h2>
-<div class="outline-text-2" id="text-org55f6dc2">
+<div id="outline-container-org1bc8bcc" class="outline-2">
+<h2 id="org1bc8bcc">Publications</h2>
+<div class="outline-text-2" id="text-org1bc8bcc">
 <ul class="org-ul">
 <li>2012 - <a href="http://accu.org/index.php/journals/1916">ACCU Overload Magazine #109, June 2012</a>: Curiously Recursive Template Problems with Aspect Oriented Programming. Hugo Arregui, Carlos Castro, Daniel Gutson</li>
 <li>2011 - 2do Congreso Argentino de Biologia Computacional: Biopp2, biological alphabet manipulation library. Hugo Arregui, Daniel Gutson</li>
@@ -367,9 +372,9 @@ user's shared state.</li>
 </div>
 </div>
 
-<div id="outline-container-org123c0a4" class="outline-2">
-<h2 id="org123c0a4">Education</h2>
-<div class="outline-text-2" id="text-org123c0a4">
+<div id="outline-container-orgefceae5" class="outline-2">
+<h2 id="orgefceae5">Education</h2>
+<div class="outline-text-2" id="text-orgefceae5">
 <dl class="org-dl">
 <dt>2010 - 2014</dt><dd>System Analyst at CAECE University</dd>
 <dt>2017 - Elastic</dt><dd>Advanced Elasticsearch: Data Modeling</dd>
@@ -385,7 +390,7 @@ user's shared state.</li>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-02-04 mar 17:25</p>
+<p class="date">Created: 2020-06-25 jue 20:17</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

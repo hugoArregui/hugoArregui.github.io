@@ -15,14 +15,11 @@
 - Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://gitlab.com/hugoArregui][GitLab]]
 
 * Professional Experience
-
-** 11/2019 - [ PRESENT ]: Engineer at [[https://decentraland.org][Decentraland]]'s Special Projects Team (Working remotely)
-   - Research and development
-   - Stack: /C++, unreal/
-** 09/2018 - 11/2019: Tech Leader at [[https://decentraland.org][Decentraland]]'s Backend Team (Working remotely)
+** 09/2018 - 03/2020: Tech Leader at [[https://decentraland.org][Decentraland]] (Working remotely)
    - Design and implement Decentraland's platform: identity, communications,
-     user's shared state.
-   - Stack: /golang, webrtc, auth0/
+     user's sh1ared state.
+   - Research and development
+   - Stack: /golang, webrtc, auth0, C++, Unreal Engine/
 ** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]] (Working remotely)
    - Development and maintenance of Auth0's Management API
    - Support users search engine using ElasticSearch

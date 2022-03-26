@@ -15,14 +15,15 @@
 - Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://gitlab.com/hugoArregui][GitLab]]
 
 * Professional Experience
-** 02/2021 - PRESENT: Engineer at [[https://www.polarsteps.com/][PolarSteps]] (Working remotely)
+** 03/2022 - [PRESENT]: Tech Leader at [[https://decentraland.org][Decentraland]] (Working remotely)
+** 02/2021 - 03/2022: Engineer at [[https://www.polarsteps.com/][PolarSteps]] (Working remotely)
 ** 03/2020 - 02/2021: Engineer at [[https://bigtime.gg/][Big Time Studios]] (Working remotely)
    - Design and implement backend services
    - PoC Research and development
    - Stack: /typescript, Unreal Engine/
 ** 09/2018 - 03/2020: Tech Leader at [[https://decentraland.org][Decentraland]] (Working remotely)
    - Design and implement Decentraland's platform: identity, communications,
-     user's sh1ared state.
+     user's shared state.
    - Research and development
    - Stack: /golang, webrtc, auth0, C++, Unreal Engine/
 ** 03/2016 - 09/2018: Engineer at [[https://auth0.com/][Auth0]] (Working remotely)

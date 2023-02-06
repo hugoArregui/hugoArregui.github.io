@@ -15,7 +15,7 @@
 - Links: :: [[http://ar.linkedin.com/in/hugoarregui/][LinkedIn]], [[https://github.com/hugoArregui][GitHub]], [[https://gitlab.com/hugoArregui][GitLab]]
 
 * Professional Experience
-** 03/2022 - [PRESENT]: Tech Leader at [[https://decentraland.org][Decentraland]] (Working remotely)
+** 03/2022 - [PRESENT]: Staff Engineer at [[https://decentraland.org][Decentraland]] (Working remotely)
 ** 02/2021 - 03/2022: Engineer at [[https://www.polarsteps.com/][PolarSteps]] (Working remotely)
 ** 03/2020 - 02/2021: Engineer at [[https://bigtime.gg/][Big Time Studios]] (Working remotely)
    - Design and implement backend services
